@@ -3,7 +3,7 @@ from sklearn.metrics import r2_score
 import matplotlib.pyplot as plt
 
 
-def accuracy_score(pred_y, test_Y):
+def accuracy_score(pred_y, test_y):
     e = np.sum((pred_y - test_y) ** 2)
     t = np.sum((test_y - np.sum(test_y) / int(n / 4)) ** 2)
     return 1 - e / t
