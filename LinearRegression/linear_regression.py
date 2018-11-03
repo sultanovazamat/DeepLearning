@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 
 
 def accuracy_score(pred_y, test_y):
-    e = np.sum((pred_y - test_y) ** 2)
-    t = np.sum((test_y - np.sum(test_y) / int(n / 4)) ** 2)
-    return 1 - e / t
+    RSS = np.sum((pred_y - test_y) ** 2)
+    TSS = np.sum((test_y - np.mean(test_y)) ** 2)
+    return 1 - RSS / TSS
 
 
 np.random.seed(100)
