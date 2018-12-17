@@ -1,2 +1,2 @@
 # Deep Learning Algorithms
-Python implementation of mostly used deep learning algorithms
+Python implementation of different types of ML and Deep Learning algorithms
