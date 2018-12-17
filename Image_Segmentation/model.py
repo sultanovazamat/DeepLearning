@@ -1,6 +1,5 @@
 import torch.nn as nn
 
-
 def bn(out_planes):
     return nn.BatchNorm2d(num_features = out_planes)
 
@@ -26,9 +25,7 @@ def max_pool(out_planes, kernel = 3, stride = 2, padding = 1):
     return nn.MaxPool2d(kernel_size = kernel, stride = stride, padding = padding, return_indices = True)                       
 
 def max_unpool(out_planes, kernel = 3, stride = 2, padding = 1):
-    return nn.MaxUnpool2d(kernel_size = kernel, stride = stride, padding = padding)
-                     
-      
+    return nn.MaxUnpool2d(kernel_size = kernel, stride = stride, padding = padding)   
     
 # input size Bx3x224x224
 class SegmenterModel(nn.Module):
