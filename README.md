@@ -1,2 +1,2 @@
 # Deep Learning
-Python Implemenation of Deep Learning Tasks
+Pytorch Implemenation of Deep Learning Algorithms during the Fundamentals of Neural Networks course from Mail.ru Group
